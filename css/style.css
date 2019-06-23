@@ -16,3 +16,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#containerGrid>div {
+    padding: 8px;
+}

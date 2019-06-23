@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>The Coder's Place</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="nav">
+        <a class="navbar-brand" href="#">The Coder's Place</a>
+    </nav>
+    <div class="container shadow-sm" id="split">
+        <!-- Todo: Add form validation BS4 classes for feedback -->
+        <form class="mx-auto w-50" action="dash/" method="post">
+            <div class="form-group">
+                <label for="usn">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="material-icons">account_box</i></span>
+                    </div>
+                    <input type="text" class="form-control" id="usn" placeholder="g14nt_c0d3r" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="psw">Password</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="material-icons">lock</i></span>
+                    </div>
+                    <input type="password" class="form-control" id="psw" placeholder="iEf%wh3" />
+                </div>
+            </div>
+            <div class="form-check form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="remember">
+                    <label class="custom-control-label" for="remember">Remeber me</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="reset" class="btn btn-outline-warning">Reset</button>
+                <!-- Todo: Add form validation BS4 classes for feedback -->
+                <button type="submit" class="btn btn-success ml-3">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
