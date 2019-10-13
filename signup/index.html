@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FileServer2</title>
+    <!-- Metadata Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="nav">
+        <a class="navbar-brand" href="index.php">FileServer V2</a>
+    </nav>
+
+    <!-- Page -->
+    <div class="container shadow-sm" id="split">
+        <!-- Todo: Add form validation BS4 classes for feedback -->
+        <form class="mx-auto w-50" method="post" action="../addUser.php">
+            <div class="form-group">
+                <label for="usn">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="material-icons text-black">person</i></span>
+                    </div>
+                    <input type="text" class="form-control" name="usn" id="usn" placeholder="username" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="psw">Password</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="material-icons">vpn_key</i></span>
+                    </div>
+                    <input type="password" class="form-control" name="psw" id="psw" placeholder="password" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rep">Confirm Password</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="material-icons">vpn_key</i></span>
+                    </div>
+                    <input type="password" class="form-control" name="rep" id="rep" placeholder="retype password" />
+                </div>
+            </div>
+            <div class="form-check form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="remember">
+                    <label class="custom-control-label" for="remember">Remeber me</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Signup</button>
+                <a href="../login/">
+                    <div class="btn btn-info ml-3" action="index.html">Log in</div>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark" id="bar">
+
+        <div class="footer-copyright text-center py-3">
+
+        </div>
+
+    </footer>
+
+    <!-- JQuery, Tether, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+</body>
+
+</html>
